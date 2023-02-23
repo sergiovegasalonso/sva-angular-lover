@@ -13,9 +13,12 @@
 
 .example-sidenav {
   width: 300px;
-  padding: 20px;
 }
 
 .example-spacer {
   flex: 1 1 auto;
+}
+
+li a button {
+  width: 100%;
 }

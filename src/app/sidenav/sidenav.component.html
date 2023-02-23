@@ -1,6 +1,12 @@
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="example-sidenav" mode="over">
     <h1>Hola Tamara</h1>
+    <mat-list role="list">
+      <mat-list-item matRipple routerLink="home" (click)="drawer.toggle()" role="listitem">Home</mat-list-item>
+      <mat-list-item matRipple routerLink="about" (click)="drawer.toggle()" role="listitem">About</mat-list-item>
+      <mat-list-item matRipple routerLink="settings" (click)="drawer.toggle()" role="listitem">Settings</mat-list-item>
+      <mat-list-item matRipple routerLink="settingsadffsdfsds" (click)="drawer.toggle()" role="listitem">Not found</mat-list-item>
+    </mat-list>
   </mat-drawer>
   <mat-toolbar color="primary">
     <button (click)="drawer.toggle()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
@@ -17,6 +23,6 @@
   </mat-toolbar>
   <div class="example-sidenav-content">
     <app-snackbar></app-snackbar>
+    <router-outlet></router-outlet>
   </div>
-  <router-outlet></router-outlet>
 </mat-drawer-container>
