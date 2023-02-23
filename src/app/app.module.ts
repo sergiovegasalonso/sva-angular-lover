@@ -10,13 +10,16 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { SnackbarComponent } from './snackbar/snackbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SidenavComponent
+    SidenavComponent,
+    SnackbarComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +29,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
+    MatSnackBarModule,
     StoreModule.forRoot({}, {})
   ],
   providers: [],
