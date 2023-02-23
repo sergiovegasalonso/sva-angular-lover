@@ -8,6 +8,8 @@ import { StoreModule } from '@ngrx/store';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
 
 import { SidenavComponent } from './sidenav/sidenav.component';
 
@@ -22,6 +24,8 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     BrowserAnimationsModule,
     MatSidenavModule,
     MatButtonModule,
+    MatToolbarModule,
+    MatIconModule,
     StoreModule.forRoot({}, {})
   ],
   providers: [],
