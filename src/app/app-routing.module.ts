@@ -6,6 +6,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   {
     path: 'home',
     component: HomeComponent
