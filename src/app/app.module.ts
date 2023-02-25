@@ -13,6 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatListModule } from '@angular/material/list';
 import { MatRippleModule } from '@angular/material/core';
+import { MatDividerModule } from '@angular/material/divider';
 
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { SnackbarComponent } from './snackbar/snackbar.component';
@@ -42,6 +43,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     MatSnackBarModule,
     MatListModule,
     MatRippleModule,
+    MatDividerModule,
     StoreModule.forRoot({}, {})
   ],
   providers: [],

@@ -19,6 +19,30 @@
   flex: 1 1 auto;
 }
 
-li a button {
+.sidebar-title {
+  padding: 1rem 1rem 0 1rem;
+}
+
+.list-content-wrapper {
+  display: flex;
+  align-items: center;
   width: 100%;
+  height: 100%;
+}
+
+.list-content-wrapper > .text {
+  margin-left: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.active > .mdc-list-item {
+  background-color: #c2185b;
+}
+
+.link mat-list-item > span > span {
+  display: flex;
+  align-items: center;
 }
