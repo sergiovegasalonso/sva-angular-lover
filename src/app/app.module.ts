@@ -20,6 +20,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { SnackbarComponent } from './snackbar/snackbar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HeaderMenuComponent } from './header-menu/header-menu.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { HeaderMenuComponent } from './header-menu/header-menu.component';
     MatRippleModule,
     MatDividerModule,
     MatMenuModule,
-    StoreModule.forRoot({}, {})
+    StoreModule.forRoot({}, {}),
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
