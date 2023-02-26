@@ -11,6 +11,14 @@
           </div>
         </mat-list-item>
       </a>
+      <a routerLink="favorites" routerLinkActive="active" ariaCurrentWhenActive="page">
+        <mat-list-item matRipple (click)="drawer.toggle()" role="listitem">
+          <div class="list-content-wrapper">
+            <mat-icon aria-hidden="false" aria-label="Favorites icon" fontIcon="favorites"></mat-icon>
+            <span class="text">Favorites</span>
+          </div>
+        </mat-list-item>
+      </a>
       <a routerLink="about" routerLinkActive="active" ariaCurrentWhenActive="page">
         <mat-list-item matRipple (click)="drawer.toggle()" role="listitem">
           <div class="list-content-wrapper">
