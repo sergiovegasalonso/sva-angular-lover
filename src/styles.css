@@ -11,3 +11,13 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+app-home,
+app-favorites,
+app-about,
+app-settings,
+app-not-found,
+.page {
+  width: 100%;
+  height: 100%;
+}

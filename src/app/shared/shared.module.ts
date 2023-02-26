@@ -1,13 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TabsNavigatorComponent } from './components/tabs-navigator/tabs-navigator.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatIconModule } from '@angular/material/icon';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { GlobalProgressBarComponent } from './components/global-progress-bar/global-progress-bar.component';
 
 @NgModule({
   declarations: [
-    TabsNavigatorComponent
+    GlobalProgressBarComponent
   ],
   imports: [
-    CommonModule
-  ]
+    CommonModule,
+    MatTabsModule,
+    MatIconModule,
+    MatProgressBarModule
+  ],
+  exports: [
+    GlobalProgressBarComponent
+  ],
 })
 export class SharedModule { }
