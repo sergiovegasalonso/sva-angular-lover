@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -21,6 +23,8 @@ import { SnackbarComponent } from './snackbar/snackbar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HeaderMenuComponent } from './header-menu/header-menu.component';
 import { SharedModule } from './shared/shared.module';
+
+import { PunkIpaService } from './shared/services/punk-ipa.service';
 
 @NgModule({
   declarations: [
@@ -44,9 +48,10 @@ import { SharedModule } from './shared/shared.module';
     MatDividerModule,
     MatMenuModule,
     StoreModule.forRoot({}, {}),
-    SharedModule
+    SharedModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [PunkIpaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

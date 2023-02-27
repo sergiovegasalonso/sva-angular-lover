@@ -1,1 +1,12 @@
-<section class="page"></section>
+<section class="page">
+    <mat-spinner *ngIf="loading"></mat-spinner>
+    <div *ngIf="!loading">
+        <mat-grid-list cols="3" rowHeight="2:1">
+            <mat-grid-tile *ngFor="let item of beers; index as i;">
+                <mat-card>
+                    <mat-card-content>{{item.name}}</mat-card-content>
+                </mat-card>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+</section>
