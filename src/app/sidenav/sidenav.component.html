@@ -11,6 +11,14 @@
           </div>
         </mat-list-item>
       </a>
+      <a routerLink="ngrx-test" routerLinkActive="active" ariaCurrentWhenActive="page">
+        <mat-list-item matRipple (click)="drawer.toggle()" role="listitem">
+          <div class="list-content-wrapper">
+            <mat-icon aria-hidden="false" aria-label="Bolt icon" fontIcon="bolt"></mat-icon>
+            <span class="text">NgRX Test</span>
+          </div>
+        </mat-list-item>
+      </a>
       <a routerLink="favorites" routerLinkActive="active" ariaCurrentWhenActive="page">
         <mat-list-item matRipple (click)="drawer.toggle()" role="listitem">
           <div class="list-content-wrapper">

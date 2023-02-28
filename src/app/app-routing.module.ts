@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: 'favorites', loadChildren: () => import('./pages/favorites/favorites.module').then(m => m.FavoritesModule) },
   { path: 'about', loadChildren: () => import('./pages/about/about.module').then(m => m.AboutModule) },
   { path: 'settings', loadChildren: () => import('./pages/settings/settings.module').then(m => m.SettingsModule) },
+  { path: 'ngrx-test', loadChildren: () => import('./pages/ngrx-test/ngrx-test.module').then(m => m.NgrxTestModule) },
   { path: '**', loadChildren: () => import('./pages/not-found/not-found.module').then(m => m.NotFoundModule) },
 ];
 

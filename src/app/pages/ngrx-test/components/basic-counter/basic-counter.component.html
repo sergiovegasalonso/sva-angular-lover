@@ -1,0 +1,19 @@
+<mat-card>
+    <mat-card-content>
+        <div class="buttons-row">
+            <button (click)="this.add()" mat-mini-fab color="primary" aria-label="Add icon">
+                <mat-icon>add</mat-icon>
+            </button>
+            <button (click)="this.remove()" mat-mini-fab color="primary" aria-label="Remove icon">
+                <mat-icon>remove</mat-icon>
+            </button>
+            <button (click)="this.reset()" mat-mini-fab aria-label="Delete icon">
+                <mat-icon>delete</mat-icon>
+            </button>
+        </div>
+        <mat-form-field class="example-full-width">
+            <mat-label>Counter (disabled)</mat-label>
+            <input matInput disabled value="{{counter}}">
+        </mat-form-field>
+    </mat-card-content>
+</mat-card>
